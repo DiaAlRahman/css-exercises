@@ -7,8 +7,14 @@ html {
 .container {
   text-align: center;
   height: 100%;
-  padding: 16px;
+  padding: 10px;
   box-sizing: border-box;
+
+  display: grid;
+  gap: 16px;
+  justify-content: center;
+  
+  grid-template-columns: 25vw 65vw;
 }
 
 .container div {
@@ -22,10 +28,12 @@ html {
 
 .header {
   background-color: #006157;
+  grid-column-end: span 2;
 }
 
 .sidebar {
   background-color: #005B94;
+  grid-row-end: span 2;
 }
 
 .nav {
@@ -34,10 +42,12 @@ html {
 
 .article {
   background-color: #7E1DC3;
+  grid-column-start: 2;
 }
 
 .footer {
   background-color: #393f4d;
+  grid-column-end: span 2;
 }
 
 .article p {
